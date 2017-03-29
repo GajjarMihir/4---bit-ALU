@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Xillinx/Logicalf/Logicalf.xst" -ofn "C:/Sem - 2/DD/Xillinx/Logicalf/Logicalf.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "Logicalf.ngc" Logicalf.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Logicalf_map.ncd Logicalf.ngd Logicalf.pcf 
+par -w -intstyle ise -ol high -t 1 Logicalf_map.ncd Logicalf.ncd Logicalf.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Logicalf.twx Logicalf.ncd -o Logicalf.twr Logicalf.pcf 
+bitgen -intstyle ise -f Logicalf.ut Logicalf.ncd 
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Xillinx/Final/Logicalf/Logicalf.xst" -ofn "C:/Sem - 2/DD/Xillinx/Final/Logicalf/Logicalf.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "Logicalf.ngc" Logicalf.ngd  
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Xillinx/Final/Logicalf/Logicalf.xst" -ofn "C:/Sem - 2/DD/Xillinx/Final/Logicalf/Logicalf.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Logicalf.ucf -p xc3s500e-fg320-5 "Logicalf.ngc" Logicalf.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Logicalf_map.ncd Logicalf.ngd Logicalf.pcf 
+par -w -intstyle ise -ol high -t 1 Logicalf_map.ncd Logicalf.ncd Logicalf.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Logicalf.twx Logicalf.ncd -o Logicalf.twr Logicalf.pcf -ucf Logicalf.ucf 
+bitgen -intstyle ise -f Logicalf.ut Logicalf.ncd 

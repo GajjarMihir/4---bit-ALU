@@ -1,0 +1,6 @@
+verilog work "../Shifterf/Shifterf.v"
+verilog work "../Mux/Mux.v"
+verilog work "../Logicalf/Logicalf.v"
+verilog work "../Comparatorf/Comparatorf.v"
+verilog work "../Addf/Addf.v"
+verilog work "Alu.v"

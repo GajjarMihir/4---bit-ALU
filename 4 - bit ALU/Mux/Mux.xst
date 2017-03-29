@@ -1,0 +1,5 @@
+set -tmpdir "C:/Sem - 2/DD/Xillinx/Final/Mux/xst/projnav.tmp"
+set -xsthdpdir "C:/Sem - 2/DD/Xillinx/Final/Mux/xst"
+elaborate
+-ifn Mux.prj
+-ifmt mixed

@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Submissions/Practical - 9/Final/Alu/Alu.xst" -ofn "C:/Sem - 2/DD/Submissions/Practical - 9/Final/Alu/Alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Alu.ucf -p xc3s500e-fg320-5 "Alu.ngc" Alu.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Alu_map.ncd Alu.ngd Alu.pcf 
+par -w -intstyle ise -ol high -t 1 Alu_map.ncd Alu.ncd Alu.pcf 
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Submissions/Practical - 9/Final/Alu/Alu.xst" -ofn "C:/Sem - 2/DD/Submissions/Practical - 9/Final/Alu/Alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Alu.ucf -p xc3s500e-fg320-5 "Alu.ngc" Alu.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Alu_map.ncd Alu.ngd Alu.pcf 
+par -w -intstyle ise -ol high -t 1 Alu_map.ncd Alu.ncd Alu.pcf 

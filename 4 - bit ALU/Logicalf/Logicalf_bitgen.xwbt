@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Sem - 2\DD\Xillinx\Final\Logicalf\Logicalf.ncd
+OUTFILE=C:\Sem - 2\DD\Xillinx\Final\Logicalf\Logicalf.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Sem - 2\DD\Xillinx\Final\Logicalf
+LICENSE=WebPack
+USER_INFO=__0_0_0

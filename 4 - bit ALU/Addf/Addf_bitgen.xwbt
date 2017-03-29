@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Sem - 2\DD\Xillinx\Final\Addf\Addf.ncd
+OUTFILE=C:\Sem - 2\DD\Xillinx\Final\Addf\Addf.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Sem - 2\DD\Xillinx\Final\Addf
+LICENSE=WebPack
+USER_INFO=__0_0_0

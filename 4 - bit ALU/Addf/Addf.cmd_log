@@ -1,0 +1,26 @@
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Xillinx/Addf/Addf.xst" -ofn "C:/Sem - 2/DD/Xillinx/Addf/Addf.syr" 
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Xillinx/Addf/Addf.xst" -ofn "C:/Sem - 2/DD/Xillinx/Addf/Addf.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I "Addf.ngc" Addf.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Addf_map.ncd Addf.ngd Addf.pcf 
+par -w -intstyle ise -ol high -mt off Addf_map.ncd Addf.ncd Addf.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Addf.twx Addf.ncd -o Addf.twr Addf.pcf 
+bitgen -intstyle ise -f Addf.ut Addf.ncd 
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Xillinx/Addf/Addf.xst" -ofn "C:/Sem - 2/DD/Xillinx/Addf/Addf.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "Addf.ngc" Addf.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Addf_map.ncd Addf.ngd Addf.pcf 
+par -w -intstyle ise -ol high -t 1 Addf_map.ncd Addf.ncd Addf.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Addf.twx Addf.ncd -o Addf.twr Addf.pcf 
+bitgen -intstyle ise -f Addf.ut Addf.ncd 
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Xillinx/Final/Addf/Addf.xst" -ofn "C:/Sem - 2/DD/Xillinx/Final/Addf/Addf.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "Addf.ngc" Addf.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Addf_map.ncd Addf.ngd Addf.pcf 
+par -w -intstyle ise -ol high -t 1 Addf_map.ncd Addf.ncd Addf.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Addf.twx Addf.ncd -o Addf.twr Addf.pcf 
+bitgen -intstyle ise -f Addf.ut Addf.ncd 
+xst -intstyle ise -ifn "C:/Sem - 2/DD/Xillinx/Final/Addf/Addf.xst" -ofn "C:/Sem - 2/DD/Xillinx/Final/Addf/Addf.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Addf.ucf -p xc3s500e-fg320-5 "Addf.ngc" Addf.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Addf.ucf -p xc3s500e-fg320-5 "Addf.ngc" Addf.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Addf_map.ncd Addf.ngd Addf.pcf 
+par -w -intstyle ise -ol high -t 1 Addf_map.ncd Addf.ncd Addf.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Addf.twx Addf.ncd -o Addf.twr Addf.pcf -ucf Addf.ucf 
+bitgen -intstyle ise -f Addf.ut Addf.ncd 
